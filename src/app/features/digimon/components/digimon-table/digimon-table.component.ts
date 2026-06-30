@@ -5,8 +5,7 @@ import { MatSortModule } from '@angular/material/sort';
 import { RouterLink } from '@angular/router';
 import { map, Observable, of } from 'rxjs';
 
-import { Page } from '../../../../shared';
-import { DigimonListItem } from '../../models/digimon-list-item';
+import { DigimonListItem, Page } from '../../../../shared';
 
 @Component({
     selector: 'app-digimon-table',

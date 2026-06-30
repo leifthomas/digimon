@@ -1,8 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Service } from '@angular/core';
 
-import { Page } from '../../../../shared';
-import { DigimonListItem } from '../../models/digimon-list-item';
+import { DigimonListItem, Page } from '../../../../shared';
 
 @Service()
 export class DigimonDataService {
