@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 
-import { DigimonDataService } from '../../services/digimon-data/digimon-data.service';
+import { DigimonFacadeService } from '../../services/digimon-facade.service';
 import { DigimonTableComponent } from '../digimon-table/digimon-table.component';
 
 @Component({
@@ -11,7 +11,7 @@ import { DigimonTableComponent } from '../digimon-table/digimon-table.component'
     styleUrl: './digimon-list-page.component.css',
 })
 export class DigimonListPageComponent {
-    readonly #digimonDataService = inject(DigimonDataService);
+    readonly #digimonFacadeService = inject(DigimonFacadeService);
 
-    readonly digimonPage = this.#digimonDataService.getDigimon();
+    readonly digimonPage = this.#digimonFacadeService.getDigimonPage();
 }
